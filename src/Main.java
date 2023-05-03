@@ -8,6 +8,18 @@ public class Main {
         //Примеры: indexOf("Java is the best", 'i') -> 5
         //indexOf("Java is the best", 'q') -> -1
         //indexOf("Java is the best", 'a') -> 1
+        System.out.println(indexOf("Java is the best",'q'));
+        System.out.println(indexOf("Java is the best",'a'));
 
     }
+    public static int indexOf(String word,char a) {
+        for (int i = 0;i<word.length();i++) {
+            if (word.charAt(i)==a) {
+                return i;
+            }
+        }
+        return (-1);
+    }
+
+
 }
